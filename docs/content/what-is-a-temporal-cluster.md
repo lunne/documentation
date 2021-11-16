@@ -84,7 +84,7 @@ There a three types of queues that the a History shard maintains:
 - Timer queues: This is used to durably persist Timers.
 - Replicator queue: This is used only for the experimental Multi-Cluster feature
 
-The History service talks to the Matching Service and the Database.
+The History service talks to the Matching Service and the Database. If enabled it also talks to Elastic.
 
 - It uses grpcPort 7234 to host the service handler.
 - It uses port 6934 for membership related communication.
